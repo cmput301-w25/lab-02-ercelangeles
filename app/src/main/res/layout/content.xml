@@ -7,4 +7,5 @@
     android:text="sample_text"
     android:textSize="40sp">
 
+
 </TextView>
