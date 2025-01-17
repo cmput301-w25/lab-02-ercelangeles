@@ -59,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
 
         addButton = findViewById(R.id.Add);
         deleteButton = findViewById(R.id.Delete);
+        /* [8] Code taken from https://stackoverflow.com/questions/2838757/how-to-set-opacity-alpha-for-view-in-android
+        * Authored by: Jake Wilson
+        * Taken by: Ercel Angeles
+        * Taken on: January 17, 2025 */
         deleteButton.getBackground().setAlpha(150);
 
         confirmButton = findViewById(R.id.CONFIRM);
@@ -85,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 cityList.setAdapter(cityAdapter);   // [7]
                 userInput = "";
                 editText.setText("");
+                deleteButton.getBackground().setAlpha(150);
             }
         });
 
