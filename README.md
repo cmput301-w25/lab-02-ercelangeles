@@ -8,9 +8,9 @@
 
 ## References and Resources
 
-[](https://www.youtube.com/watch?v=tZvjSl9dswg)  
-[EditText](https://www.youtube.com/watch?v=-Yelywy0idc)
-[onClick Listener](https://www.youtube.com/watch?v=fqfv6gOZZhY)
+[Getting input from textbox](https://www.youtube.com/watch?v=tZvjSl9dswg)  
+[EditText](https://www.youtube.com/watch?v=-Yelywy0idc)  
+[onClick Listener](https://www.youtube.com/watch?v=fqfv6gOZZhY)  
 
 ## Verbal Collaboration
 
