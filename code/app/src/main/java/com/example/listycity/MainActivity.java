@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         addButton = findViewById(R.id.Add);
         deleteButton = findViewById(R.id.Delete);
+        deleteButton.getBackground().setAlpha(150);
 
         confirmButton = findViewById(R.id.CONFIRM);
         confirmButton.setVisibility(View.INVISIBLE);
@@ -112,18 +113,21 @@ public class MainActivity extends AppCompatActivity {
         cityList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                deleteButton.getBackground().setAlpha(255);
                 editText.setVisibility(View.INVISIBLE);
                 confirmButton.setVisibility(View.INVISIBLE);
                 userInput = (String) adapterView.getItemAtPosition(i);
             }
         });
 
+        // Deletes a selected item.
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dataList.remove(userInput);
                 cityList.setAdapter(cityAdapter);
                 userInput = "";
+                deleteButton.getBackground().setAlpha(150);
             }
         });
 
