@@ -8,7 +8,8 @@
 
 ## References and Resources
 
-List any resources used here, or simply put `N/A` if not applicable.
+https://www.youtube.com/watch?v=tZvjSl9dswg
+http://youtube.com/watch?v=-Yelywy0idc
 
 ## Verbal Collaboration
 
