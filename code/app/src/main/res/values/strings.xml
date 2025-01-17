@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ListyCity</string>
+    <string name="deleteCityButton">DELETE CITY</string>
+    <string name="addCityButton">ADD CITY</string>
+    <string name="hintText">Enter city (e.g. Edmonton)</string>
+    <string name="confirmCityButton">CONFIRM</string>
 </resources>
