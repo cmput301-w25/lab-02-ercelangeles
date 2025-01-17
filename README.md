@@ -14,6 +14,7 @@
 [4] [Adding new values to ListView](https://www.youtube.com/watch?v=7yZngVxaZDM)  
 [5] [Selecting a row from the ListView](https://www.youtube.com/watch?v=5F5EJ1LUoZY)  
 [6] [Highlighting a selected row in ListView](https://stackoverflow.com/questions/5853719/highlighting-only-the-selected-item-in-the-listview-in-android)  
+[7] [Unhighlighting a selected row in ListView](https://stackoverflow.com/questions/48253761/how-do-i-clear-listview-selection)
 
 ## Verbal Collaboration
 
