@@ -8,9 +8,10 @@
 
 ## References and Resources
 
-[Getting input from textbox](https://www.youtube.com/watch?v=tZvjSl9dswg)  
-[EditText](https://www.youtube.com/watch?v=-Yelywy0idc)  
-[onClick Listener](https://www.youtube.com/watch?v=fqfv6gOZZhY)  
+[1] [Getting input from textbox](https://www.youtube.com/watch?v=tZvjSl9dswg)  
+[2] [EditText](https://www.youtube.com/watch?v=-Yelywy0idc)  
+[3] [onClick Listener](https://www.youtube.com/watch?v=fqfv6gOZZhY)  
+[4] [Adding new values to ListView](https://www.youtube.com/watch?v=7yZngVxaZDM)
 
 ## Verbal Collaboration
 
