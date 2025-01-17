@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         * Taken on: January 17, 2025 */
         cityList.setSelector(android.R.color.darker_gray);
 
-        String []cities = {"Edmonton", "Vancouver"};
+        String []cities = {"Edmonton", "Vancouver", "Moscow", "Sydney", "Berlin", "Vienna", "Tokyo", "Beijing", "Osaka", "New Delhi"};
         dataList = new ArrayList<>();
         dataList.addAll(Arrays.asList(cities));
 

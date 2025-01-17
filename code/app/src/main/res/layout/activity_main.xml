@@ -13,14 +13,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+
+        android:layout_marginEnd="8dp"
         android:background="#ff6750a4"
         android:text="@string/deleteCityButton"
-
-
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/Add"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,15 +28,14 @@
         android:id="@+id/Add"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginRight="10dp"
         android:background="#ff6750a4"
         android:text="@string/addCityButton"
         android:textColor="@color/white"
         android:textColorLink="#ff6750a4"
         app:layout_constraintEnd_toStartOf="@+id/Delete"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,10 +44,11 @@
         android:id="@+id/textBox"
         android:layout_width="304dp"
         android:layout_height="48dp"
-        android:text=""
+        android:layout_marginBottom="8dp"
         android:hint="@string/hintText"
         android:importantForAutofill="no"
         android:inputType="text"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -56,18 +56,24 @@
         android:id="@+id/CONFIRM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="#ff6750a4"
         android:text="@string/confirmCityButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/textBox" />
 
+
     <ListView
         android:id="@+id/city_list"
-        android:layout_width="409dp"
-        android:layout_height="609dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toTopOf="@+id/textBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
