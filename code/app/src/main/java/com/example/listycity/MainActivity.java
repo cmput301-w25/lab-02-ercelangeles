@@ -2,6 +2,7 @@ package com.example.listycity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     Button addButton;
     Button deleteButton;
     Button confirmButton;
+    String userInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +39,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         cityList = findViewById(R.id.city_list);
+        cityList.setChoiceMode(ListView.CHOICE_MODE_SINGLE);    // [5]
+        /* [6] Code taken from https://stackoverflow.com/questions/5853719/highlighting-only-the-selected-item-in-the-listview-in-android
+        * Authored by: rekaszeru
+        * Edited by: Donald Duck
+        * Taken by: Ercel Angeles
+        * Taken on: January 17, 2025 */
+        cityList.setSelector(android.R.color.darker_gray);
 
-        String []cities = {"Edmonton", "Vancouver", "Moscow", "Sydney", "Berlin", "Vienna", "Tokyo", "Beijing", "Osaka", "New Delhi"};
+        String []cities = {"Edmonton", "Vancouver"};
         dataList = new ArrayList<>();
         dataList.addAll(Arrays.asList(cities));
 
@@ -49,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         editText.setVisibility(View.INVISIBLE);
 
         addButton = findViewById(R.id.Add);
+        deleteButton = findViewById(R.id.Delete);
 
         confirmButton = findViewById(R.id.CONFIRM);
         confirmButton.setVisibility(View.INVISIBLE);
@@ -65,6 +75,15 @@ public class MainActivity extends AppCompatActivity {
                     editText.setVisibility(View.VISIBLE);
                 if (confirmButton.getVisibility() == View.INVISIBLE)
                     confirmButton.setVisibility(View.VISIBLE);
+
+                /* [7] Code taken from https://stackoverflow.com/questions/48253761/how-do-i-clear-listview-selection
+                * Authored by: Aleksandr Medvedev
+                * Taken by: Ercel Angeles
+                * Taken on: January 17, 2025*/
+                cityList.clearChoices();    // [7]
+                cityList.setAdapter(cityAdapter);   // [7]
+                userInput = "";
+                editText.setText("");
             }
         });
 
@@ -76,11 +95,35 @@ public class MainActivity extends AppCompatActivity {
                 * Authored by: IJ Apps
                 * Taken by: Ercel Angeles
                 * Taken on: January 17, 2025 */
-                String userInput = editText.getText().toString();   // [4]
+                userInput = editText.getText().toString();   // [4]
                 dataList.add(userInput);    // [4]
                 cityList.setAdapter(cityAdapter);   // [4]
+                userInput = "";
+                editText.setText("");
                 editText.setVisibility(View.INVISIBLE);
                 confirmButton.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        /* [5] Function code is taken from https://www.youtube.com/watch?v=5F5EJ1LUoZY
+        * Authored by: Coding with Dev
+        * Taken by: Ercel Angeles
+        * Taken on: January 17, 2025*/
+        cityList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                editText.setVisibility(View.INVISIBLE);
+                confirmButton.setVisibility(View.INVISIBLE);
+                userInput = (String) adapterView.getItemAtPosition(i);
+            }
+        });
+
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dataList.remove(userInput);
+                cityList.setAdapter(cityAdapter);
+                userInput = "";
             }
         });
 

@@ -45,6 +45,7 @@
         android:id="@+id/textBox"
         android:layout_width="304dp"
         android:layout_height="48dp"
+        android:text=""
         android:hint="@string/hintText"
         android:importantForAutofill="no"
         android:inputType="text"
