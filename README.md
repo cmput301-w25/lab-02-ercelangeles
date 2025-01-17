@@ -8,8 +8,9 @@
 
 ## References and Resources
 
-https://www.youtube.com/watch?v=tZvjSl9dswg  
-https://www.youtube.com/watch?v=fqfv6gOZZhY
+[](https://www.youtube.com/watch?v=tZvjSl9dswg)  
+[EditText](https://www.youtube.com/watch?v=-Yelywy0idc)
+[onClick Listener](https://www.youtube.com/watch?v=fqfv6gOZZhY)
 
 ## Verbal Collaboration
 
