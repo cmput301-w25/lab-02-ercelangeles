@@ -9,7 +9,7 @@
 ## References and Resources
 
 https://www.youtube.com/watch?v=tZvjSl9dswg  
-https://www.youtube.com/watch?v=-Yelywy0idc
+https://www.youtube.com/watch?v=fqfv6gOZZhY
 
 ## Verbal Collaboration
 
